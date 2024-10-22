@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "simulation"
+version = "0.1.0"
+description = ""
+authors = ["Adam Basinski <adam.basinski0@gmail.com>"]
+readme = "README.md"
+packages = [{include = "simulation", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tk = "^0.1.0"
+numpy = "^2.1.2"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
